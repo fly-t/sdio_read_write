@@ -43,16 +43,20 @@ add_subdirectory(cmake/stm32cubemx)
 # Link directories setup
 target_link_directories(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user defined library search paths
-)
 
+)
+# # 递归查找子目录中的所有 .c 文件
+# file(GLOB_RECURSE ALL_C_FILES_APP "${CMAKE_SOURCE_DIR}/App/*.c")
 # Add sources to executable
 target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user sources here
+    ${CMAKE_SOURCE_DIR}/sdio/hal_sdio.c
 )
 
 # Add include paths
 target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user defined include paths
+    ${CMAKE_SOURCE_DIR}/sdio
 )
 
 # Add project symbols (macros)
