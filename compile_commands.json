@@ -1,0 +1,176 @@
+[
+{
+  "directory": "E:/STM32-Basic/F1/HAL/sdio_read_write",
+  "command": "D:\\software\\STM32CubeCLT_1.16.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Core/Inc -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\sdio_read_write.dir\\Core\\Src\\main.c.obj -c E:\\STM32-Basic\\F1\\HAL\\sdio_read_write\\Core\\Src\\main.c",
+  "file": "E:\\STM32-Basic\\F1\\HAL\\sdio_read_write\\Core\\Src\\main.c",
+  "output": "CMakeFiles\\sdio_read_write.dir\\Core\\Src\\main.c.obj"
+},
+{
+  "directory": "E:/STM32-Basic/F1/HAL/sdio_read_write",
+  "command": "D:\\software\\STM32CubeCLT_1.16.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Core/Inc -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\sdio_read_write.dir\\Core\\Src\\gpio.c.obj -c E:\\STM32-Basic\\F1\\HAL\\sdio_read_write\\Core\\Src\\gpio.c",
+  "file": "E:\\STM32-Basic\\F1\\HAL\\sdio_read_write\\Core\\Src\\gpio.c",
+  "output": "CMakeFiles\\sdio_read_write.dir\\Core\\Src\\gpio.c.obj"
+},
+{
+  "directory": "E:/STM32-Basic/F1/HAL/sdio_read_write",
+  "command": "D:\\software\\STM32CubeCLT_1.16.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Core/Inc -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\sdio_read_write.dir\\Core\\Src\\dma.c.obj -c E:\\STM32-Basic\\F1\\HAL\\sdio_read_write\\Core\\Src\\dma.c",
+  "file": "E:\\STM32-Basic\\F1\\HAL\\sdio_read_write\\Core\\Src\\dma.c",
+  "output": "CMakeFiles\\sdio_read_write.dir\\Core\\Src\\dma.c.obj"
+},
+{
+  "directory": "E:/STM32-Basic/F1/HAL/sdio_read_write",
+  "command": "D:\\software\\STM32CubeCLT_1.16.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Core/Inc -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\sdio_read_write.dir\\Core\\Src\\sdio.c.obj -c E:\\STM32-Basic\\F1\\HAL\\sdio_read_write\\Core\\Src\\sdio.c",
+  "file": "E:\\STM32-Basic\\F1\\HAL\\sdio_read_write\\Core\\Src\\sdio.c",
+  "output": "CMakeFiles\\sdio_read_write.dir\\Core\\Src\\sdio.c.obj"
+},
+{
+  "directory": "E:/STM32-Basic/F1/HAL/sdio_read_write",
+  "command": "D:\\software\\STM32CubeCLT_1.16.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Core/Inc -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\sdio_read_write.dir\\Core\\Src\\tim.c.obj -c E:\\STM32-Basic\\F1\\HAL\\sdio_read_write\\Core\\Src\\tim.c",
+  "file": "E:\\STM32-Basic\\F1\\HAL\\sdio_read_write\\Core\\Src\\tim.c",
+  "output": "CMakeFiles\\sdio_read_write.dir\\Core\\Src\\tim.c.obj"
+},
+{
+  "directory": "E:/STM32-Basic/F1/HAL/sdio_read_write",
+  "command": "D:\\software\\STM32CubeCLT_1.16.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Core/Inc -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\sdio_read_write.dir\\Core\\Src\\usart.c.obj -c E:\\STM32-Basic\\F1\\HAL\\sdio_read_write\\Core\\Src\\usart.c",
+  "file": "E:\\STM32-Basic\\F1\\HAL\\sdio_read_write\\Core\\Src\\usart.c",
+  "output": "CMakeFiles\\sdio_read_write.dir\\Core\\Src\\usart.c.obj"
+},
+{
+  "directory": "E:/STM32-Basic/F1/HAL/sdio_read_write",
+  "command": "D:\\software\\STM32CubeCLT_1.16.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Core/Inc -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\sdio_read_write.dir\\Core\\Src\\stm32f1xx_it.c.obj -c E:\\STM32-Basic\\F1\\HAL\\sdio_read_write\\Core\\Src\\stm32f1xx_it.c",
+  "file": "E:\\STM32-Basic\\F1\\HAL\\sdio_read_write\\Core\\Src\\stm32f1xx_it.c",
+  "output": "CMakeFiles\\sdio_read_write.dir\\Core\\Src\\stm32f1xx_it.c.obj"
+},
+{
+  "directory": "E:/STM32-Basic/F1/HAL/sdio_read_write",
+  "command": "D:\\software\\STM32CubeCLT_1.16.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Core/Inc -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\sdio_read_write.dir\\Core\\Src\\stm32f1xx_hal_msp.c.obj -c E:\\STM32-Basic\\F1\\HAL\\sdio_read_write\\Core\\Src\\stm32f1xx_hal_msp.c",
+  "file": "E:\\STM32-Basic\\F1\\HAL\\sdio_read_write\\Core\\Src\\stm32f1xx_hal_msp.c",
+  "output": "CMakeFiles\\sdio_read_write.dir\\Core\\Src\\stm32f1xx_hal_msp.c.obj"
+},
+{
+  "directory": "E:/STM32-Basic/F1/HAL/sdio_read_write",
+  "command": "D:\\software\\STM32CubeCLT_1.16.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Core/Inc -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\sdio_read_write.dir\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_gpio_ex.c.obj -c E:\\STM32-Basic\\F1\\HAL\\sdio_read_write\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_gpio_ex.c",
+  "file": "E:\\STM32-Basic\\F1\\HAL\\sdio_read_write\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_gpio_ex.c",
+  "output": "CMakeFiles\\sdio_read_write.dir\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_gpio_ex.c.obj"
+},
+{
+  "directory": "E:/STM32-Basic/F1/HAL/sdio_read_write",
+  "command": "D:\\software\\STM32CubeCLT_1.16.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Core/Inc -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\sdio_read_write.dir\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_ll_sdmmc.c.obj -c E:\\STM32-Basic\\F1\\HAL\\sdio_read_write\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_ll_sdmmc.c",
+  "file": "E:\\STM32-Basic\\F1\\HAL\\sdio_read_write\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_ll_sdmmc.c",
+  "output": "CMakeFiles\\sdio_read_write.dir\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_ll_sdmmc.c.obj"
+},
+{
+  "directory": "E:/STM32-Basic/F1/HAL/sdio_read_write",
+  "command": "D:\\software\\STM32CubeCLT_1.16.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Core/Inc -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\sdio_read_write.dir\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_sd.c.obj -c E:\\STM32-Basic\\F1\\HAL\\sdio_read_write\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_sd.c",
+  "file": "E:\\STM32-Basic\\F1\\HAL\\sdio_read_write\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_sd.c",
+  "output": "CMakeFiles\\sdio_read_write.dir\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_sd.c.obj"
+},
+{
+  "directory": "E:/STM32-Basic/F1/HAL/sdio_read_write",
+  "command": "D:\\software\\STM32CubeCLT_1.16.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Core/Inc -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\sdio_read_write.dir\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_mmc.c.obj -c E:\\STM32-Basic\\F1\\HAL\\sdio_read_write\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_mmc.c",
+  "file": "E:\\STM32-Basic\\F1\\HAL\\sdio_read_write\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_mmc.c",
+  "output": "CMakeFiles\\sdio_read_write.dir\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_mmc.c.obj"
+},
+{
+  "directory": "E:/STM32-Basic/F1/HAL/sdio_read_write",
+  "command": "D:\\software\\STM32CubeCLT_1.16.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Core/Inc -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\sdio_read_write.dir\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal.c.obj -c E:\\STM32-Basic\\F1\\HAL\\sdio_read_write\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal.c",
+  "file": "E:\\STM32-Basic\\F1\\HAL\\sdio_read_write\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal.c",
+  "output": "CMakeFiles\\sdio_read_write.dir\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal.c.obj"
+},
+{
+  "directory": "E:/STM32-Basic/F1/HAL/sdio_read_write",
+  "command": "D:\\software\\STM32CubeCLT_1.16.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Core/Inc -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\sdio_read_write.dir\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_rcc.c.obj -c E:\\STM32-Basic\\F1\\HAL\\sdio_read_write\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_rcc.c",
+  "file": "E:\\STM32-Basic\\F1\\HAL\\sdio_read_write\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_rcc.c",
+  "output": "CMakeFiles\\sdio_read_write.dir\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_rcc.c.obj"
+},
+{
+  "directory": "E:/STM32-Basic/F1/HAL/sdio_read_write",
+  "command": "D:\\software\\STM32CubeCLT_1.16.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Core/Inc -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\sdio_read_write.dir\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_rcc_ex.c.obj -c E:\\STM32-Basic\\F1\\HAL\\sdio_read_write\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_rcc_ex.c",
+  "file": "E:\\STM32-Basic\\F1\\HAL\\sdio_read_write\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_rcc_ex.c",
+  "output": "CMakeFiles\\sdio_read_write.dir\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_rcc_ex.c.obj"
+},
+{
+  "directory": "E:/STM32-Basic/F1/HAL/sdio_read_write",
+  "command": "D:\\software\\STM32CubeCLT_1.16.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Core/Inc -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\sdio_read_write.dir\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_gpio.c.obj -c E:\\STM32-Basic\\F1\\HAL\\sdio_read_write\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_gpio.c",
+  "file": "E:\\STM32-Basic\\F1\\HAL\\sdio_read_write\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_gpio.c",
+  "output": "CMakeFiles\\sdio_read_write.dir\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_gpio.c.obj"
+},
+{
+  "directory": "E:/STM32-Basic/F1/HAL/sdio_read_write",
+  "command": "D:\\software\\STM32CubeCLT_1.16.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Core/Inc -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\sdio_read_write.dir\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_dma.c.obj -c E:\\STM32-Basic\\F1\\HAL\\sdio_read_write\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_dma.c",
+  "file": "E:\\STM32-Basic\\F1\\HAL\\sdio_read_write\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_dma.c",
+  "output": "CMakeFiles\\sdio_read_write.dir\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_dma.c.obj"
+},
+{
+  "directory": "E:/STM32-Basic/F1/HAL/sdio_read_write",
+  "command": "D:\\software\\STM32CubeCLT_1.16.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Core/Inc -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\sdio_read_write.dir\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_cortex.c.obj -c E:\\STM32-Basic\\F1\\HAL\\sdio_read_write\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_cortex.c",
+  "file": "E:\\STM32-Basic\\F1\\HAL\\sdio_read_write\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_cortex.c",
+  "output": "CMakeFiles\\sdio_read_write.dir\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_cortex.c.obj"
+},
+{
+  "directory": "E:/STM32-Basic/F1/HAL/sdio_read_write",
+  "command": "D:\\software\\STM32CubeCLT_1.16.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Core/Inc -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\sdio_read_write.dir\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_pwr.c.obj -c E:\\STM32-Basic\\F1\\HAL\\sdio_read_write\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_pwr.c",
+  "file": "E:\\STM32-Basic\\F1\\HAL\\sdio_read_write\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_pwr.c",
+  "output": "CMakeFiles\\sdio_read_write.dir\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_pwr.c.obj"
+},
+{
+  "directory": "E:/STM32-Basic/F1/HAL/sdio_read_write",
+  "command": "D:\\software\\STM32CubeCLT_1.16.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Core/Inc -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\sdio_read_write.dir\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_flash.c.obj -c E:\\STM32-Basic\\F1\\HAL\\sdio_read_write\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_flash.c",
+  "file": "E:\\STM32-Basic\\F1\\HAL\\sdio_read_write\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_flash.c",
+  "output": "CMakeFiles\\sdio_read_write.dir\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_flash.c.obj"
+},
+{
+  "directory": "E:/STM32-Basic/F1/HAL/sdio_read_write",
+  "command": "D:\\software\\STM32CubeCLT_1.16.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Core/Inc -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\sdio_read_write.dir\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_flash_ex.c.obj -c E:\\STM32-Basic\\F1\\HAL\\sdio_read_write\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_flash_ex.c",
+  "file": "E:\\STM32-Basic\\F1\\HAL\\sdio_read_write\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_flash_ex.c",
+  "output": "CMakeFiles\\sdio_read_write.dir\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_flash_ex.c.obj"
+},
+{
+  "directory": "E:/STM32-Basic/F1/HAL/sdio_read_write",
+  "command": "D:\\software\\STM32CubeCLT_1.16.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Core/Inc -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\sdio_read_write.dir\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_exti.c.obj -c E:\\STM32-Basic\\F1\\HAL\\sdio_read_write\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_exti.c",
+  "file": "E:\\STM32-Basic\\F1\\HAL\\sdio_read_write\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_exti.c",
+  "output": "CMakeFiles\\sdio_read_write.dir\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_exti.c.obj"
+},
+{
+  "directory": "E:/STM32-Basic/F1/HAL/sdio_read_write",
+  "command": "D:\\software\\STM32CubeCLT_1.16.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Core/Inc -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\sdio_read_write.dir\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_tim.c.obj -c E:\\STM32-Basic\\F1\\HAL\\sdio_read_write\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_tim.c",
+  "file": "E:\\STM32-Basic\\F1\\HAL\\sdio_read_write\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_tim.c",
+  "output": "CMakeFiles\\sdio_read_write.dir\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_tim.c.obj"
+},
+{
+  "directory": "E:/STM32-Basic/F1/HAL/sdio_read_write",
+  "command": "D:\\software\\STM32CubeCLT_1.16.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Core/Inc -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\sdio_read_write.dir\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_tim_ex.c.obj -c E:\\STM32-Basic\\F1\\HAL\\sdio_read_write\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_tim_ex.c",
+  "file": "E:\\STM32-Basic\\F1\\HAL\\sdio_read_write\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_tim_ex.c",
+  "output": "CMakeFiles\\sdio_read_write.dir\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_tim_ex.c.obj"
+},
+{
+  "directory": "E:/STM32-Basic/F1/HAL/sdio_read_write",
+  "command": "D:\\software\\STM32CubeCLT_1.16.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Core/Inc -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\sdio_read_write.dir\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_uart.c.obj -c E:\\STM32-Basic\\F1\\HAL\\sdio_read_write\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_uart.c",
+  "file": "E:\\STM32-Basic\\F1\\HAL\\sdio_read_write\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_uart.c",
+  "output": "CMakeFiles\\sdio_read_write.dir\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_uart.c.obj"
+},
+{
+  "directory": "E:/STM32-Basic/F1/HAL/sdio_read_write",
+  "command": "D:\\software\\STM32CubeCLT_1.16.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Core/Inc -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\sdio_read_write.dir\\Core\\Src\\system_stm32f1xx.c.obj -c E:\\STM32-Basic\\F1\\HAL\\sdio_read_write\\Core\\Src\\system_stm32f1xx.c",
+  "file": "E:\\STM32-Basic\\F1\\HAL\\sdio_read_write\\Core\\Src\\system_stm32f1xx.c",
+  "output": "CMakeFiles\\sdio_read_write.dir\\Core\\Src\\system_stm32f1xx.c.obj"
+},
+{
+  "directory": "E:/STM32-Basic/F1/HAL/sdio_read_write",
+  "command": "D:\\software\\STM32CubeCLT_1.16.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Core/Inc -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\sdio_read_write.dir\\Core\\Src\\sysmem.c.obj -c E:\\STM32-Basic\\F1\\HAL\\sdio_read_write\\Core\\Src\\sysmem.c",
+  "file": "E:\\STM32-Basic\\F1\\HAL\\sdio_read_write\\Core\\Src\\sysmem.c",
+  "output": "CMakeFiles\\sdio_read_write.dir\\Core\\Src\\sysmem.c.obj"
+},
+{
+  "directory": "E:/STM32-Basic/F1/HAL/sdio_read_write",
+  "command": "D:\\software\\STM32CubeCLT_1.16.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Core/Inc -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\sdio_read_write.dir\\Core\\Src\\syscalls.c.obj -c E:\\STM32-Basic\\F1\\HAL\\sdio_read_write\\Core\\Src\\syscalls.c",
+  "file": "E:\\STM32-Basic\\F1\\HAL\\sdio_read_write\\Core\\Src\\syscalls.c",
+  "output": "CMakeFiles\\sdio_read_write.dir\\Core\\Src\\syscalls.c.obj"
+},
+{
+  "directory": "E:/STM32-Basic/F1/HAL/sdio_read_write",
+  "command": "D:\\software\\STM32CubeCLT_1.16.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Core/Inc -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -IE:/STM32-Basic/F1/HAL/sdio_read_write/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -x assembler-with-cpp -MMD -MP -g -o CMakeFiles\\sdio_read_write.dir\\startup_stm32f103xe.s.obj -c E:\\STM32-Basic\\F1\\HAL\\sdio_read_write\\startup_stm32f103xe.s",
+  "file": "E:\\STM32-Basic\\F1\\HAL\\sdio_read_write\\startup_stm32f103xe.s",
+  "output": "CMakeFiles\\sdio_read_write.dir\\startup_stm32f103xe.s.obj"
+}
+]
