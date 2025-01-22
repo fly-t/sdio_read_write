@@ -16,6 +16,9 @@ void hal_sdio_read_polling(uint8_t *pData, uint32_t BlockAdd, uint32_t NumberOfB
 void hal_sdio_wtire_polling(uint8_t *pData, uint32_t BlockAdd, uint32_t NumberOfBlocks, uint32_t Timeout);
 
 uint8_t hal_sdio_read_dma(uint8_t *pData, uint32_t BlockAdd, uint32_t NumberOfBlocks);
-
 uint8_t hal_sdio_wtire_dma(uint8_t *pData, uint32_t BlockAdd, uint32_t NumberOfBlocks);
+
+void MX_SDIO_SD_Init_Fix(void);
+
+void sdio_demo(void);
 #endif // __HAL_SDIO_H__

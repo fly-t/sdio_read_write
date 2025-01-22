@@ -55,7 +55,7 @@ void hal_sdio_read_polling(uint8_t *pData, uint32_t BlockAdd, uint32_t NumberOfB
 void hal_sdio_wtire_polling(uint8_t *pData, uint32_t BlockAdd, uint32_t NumberOfBlocks, uint32_t Timeout)
 {
     HAL_StatusTypeDef res = HAL_SD_WriteBlocks(hal_sdio_obj.hsd, pData, BlockAdd, NumberOfBlocks, Timeout);
-    // _check_sdio_res(res);
+    _check_sdio_res(res);
 }
 
 uint8_t hal_sdio_read_dma(uint8_t *pData, uint32_t BlockAdd, uint32_t NumberOfBlocks)
@@ -89,7 +89,7 @@ uint8_t hal_sdio_read_dma(uint8_t *pData, uint32_t BlockAdd, uint32_t NumberOfBl
     __HAL_LINKDMA(hal_sdio_obj.hsd, hdmarx, hdma_sdio);
 
     Return_Status = HAL_SD_ReadBlocks_DMA(hal_sdio_obj.hsd, pData, BlockAdd, NumberOfBlocks);
-
+    _check_sdio_res(Return_Status);
     return Return_Status;
 }
 
@@ -124,6 +124,55 @@ uint8_t hal_sdio_wtire_dma(uint8_t *pData, uint32_t BlockAdd, uint32_t NumberOfB
     __HAL_LINKDMA(hal_sdio_obj.hsd, hdmatx, hdma_sdio);
 
     Return_Status = HAL_SD_WriteBlocks_DMA(hal_sdio_obj.hsd, pData, BlockAdd, NumberOfBlocks);
-
+    _check_sdio_res(Return_Status);
     return Return_Status;
+}
+
+void MX_SDIO_SD_Init_Fix(void)
+{
+    hsd.Instance = SDIO;
+    hsd.Init.ClockEdge = SDIO_CLOCK_EDGE_RISING;
+    hsd.Init.ClockBypass = SDIO_CLOCK_BYPASS_DISABLE;
+    hsd.Init.ClockPowerSave = SDIO_CLOCK_POWER_SAVE_DISABLE;
+    hsd.Init.BusWide = SDIO_BUS_WIDE_1B;
+    hsd.Init.HardwareFlowControl = SDIO_HARDWARE_FLOW_CONTROL_DISABLE;
+    hsd.Init.ClockDiv = 15;
+    if (HAL_SD_Init(&hsd) != HAL_OK)
+    {
+        Error_Handler();
+    }
+    if (HAL_SD_ConfigWideBusOperation(&hsd, SDIO_BUS_WIDE_4B) != HAL_OK)
+    {
+        Error_Handler();
+    }
+}
+
+#include "stdio.h" // uart printf
+void sdio_demo(void)
+{
+    MX_SDIO_SD_Init_Fix();
+    hal_sdio_init();
+    HAL_SD_CardInfoTypeDef CardInfo;
+    hal_sdio_getcard_info(&CardInfo);
+
+    // erase
+    uint32_t start_index = 0;
+    uint32_t end_index = 100;
+    hal_erase(start_index, end_index);
+
+    // sd write
+    uint8_t pData[BLOCKSIZE] = "hello3v21\n";
+
+    uint32_t BlockAdd = 1;
+    uint32_t NumberOfBlocks = 1;
+    uint32_t Timeout = 1000;
+
+    hal_sdio_wtire_polling(pData, BlockAdd, NumberOfBlocks, Timeout);
+    // hal_sdio_wtire_dma(pData, BlockAdd, NumberOfBlocks);
+
+    uint8_t prxData[BLOCKSIZE];
+    hal_sdio_read_polling(prxData, BlockAdd, NumberOfBlocks, Timeout);
+    // hal_sdio_read_dma(prxData, BlockAdd, NumberOfBlocks);
+
+    printf("%s\n", prxData);
 }
