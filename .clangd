@@ -1,0 +1,5 @@
+CompileFlags:
+  Add: 
+    - -isystem
+    - D:\software\STM32CubeCLT_1.16.0\GNU-tools-for-STM32\arm-none-eabi\include
+  

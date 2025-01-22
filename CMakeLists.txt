@@ -29,6 +29,7 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS TRUE)
 
 # Enable CMake support for ASM and C languages
 enable_language(C ASM)
+add_compile_definitions(USE_MINIMAL_PRINTF) # 启用最小化 printf
 
 # Core project settings
 project(${CMAKE_PROJECT_NAME})
@@ -70,3 +71,4 @@ target_link_libraries(${CMAKE_PROJECT_NAME}
 
     # Add user defined libraries
 )
+
