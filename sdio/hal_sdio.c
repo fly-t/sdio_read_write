@@ -148,6 +148,8 @@ void MX_SDIO_SD_Init_Fix(void)
 }
 
 #include "stdio.h" // uart printf
+#include "rtc.h"
+
 void sdio_demo(void)
 {
     MX_SDIO_SD_Init_Fix();
@@ -161,18 +163,19 @@ void sdio_demo(void)
     hal_erase(start_index, end_index);
 
     // sd write
-    uint8_t pData[BLOCKSIZE] = "hello3v21\n";
+    uint8_t pData[BLOCKSIZE] = "hello321\n";
 
     uint32_t BlockAdd = 1;
     uint32_t NumberOfBlocks = 1;
     uint32_t Timeout = 1000;
 
-    hal_sdio_wtire_polling(pData, BlockAdd, NumberOfBlocks, Timeout);
-    // hal_sdio_wtire_dma(pData, BlockAdd, NumberOfBlocks);
+    // hal_sdio_wtire_polling(pData, BlockAdd, NumberOfBlocks, Timeout);
+    hal_sdio_wtire_dma(pData, BlockAdd, NumberOfBlocks);
 
     uint8_t prxData[BLOCKSIZE];
-    hal_sdio_read_polling(prxData, BlockAdd, NumberOfBlocks, Timeout);
-    // hal_sdio_read_dma(prxData, BlockAdd, NumberOfBlocks);
+    // hal_sdio_read_polling(prxData, BlockAdd, NumberOfBlocks, Timeout);
+    hal_sdio_read_dma(prxData, BlockAdd, NumberOfBlocks);
 
+   
     printf("%s\n", prxData);
 }
