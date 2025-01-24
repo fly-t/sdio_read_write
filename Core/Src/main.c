@@ -169,7 +169,7 @@ int main(void)
     BYTE WriteBuffer[] = "欢迎使用野火STM32开发板 今天是个好日子，新建文件系统测试文件\r\n";
 
     char tempfilepath[60];
-    sprintf(tempfilepath, "%s%s", SDPath, "FatFs读写测试文件.txt"); // 拼接出带逻辑驱动器名的完整路径名
+    sprintf(tempfilepath, "%s%s", SDPath, "FatFs_test_file.txt"); // 拼接出带逻辑驱动器名的完整路径名
 
     res = f_open(&file, tempfilepath, FA_CREATE_ALWAYS | FA_WRITE);
     if (res == FR_OK)
@@ -194,30 +194,31 @@ int main(void)
         printf("！！打开/创建文件失败。\r\n");
     }
 
+    BYTE ReadBuffer[BLOCKSIZE] = {0}; /* 读缓冲区 */
+
     /*------------------- 文件系统测试：读测试 ------------------------------------*/
-    // printf("****** 即将进行文件读取测试... ******\r\n");
-    // f_res = f_open(&file, tempfilepath, FA_OPEN_EXISTING | FA_READ);
-    // if (f_res == FR_OK)
-    // {
-    //     printf("》打开文件成功。\r\n");
-    //     f_res = f_read(&file, ReadBuffer, sizeof(ReadBuffer), &fnum);
-    //     if (f_res == FR_OK)
-    //     {
-    //         printf("》文件读取成功,读到字节数据：%d\r\n", fnum);
-    //         printf("》读取得的文件数据为：\r\n%s \r\n", ReadBuffer);
-    //         LED_GREEN;
-    //     }
-    //     else
-    //     {
-    //         printf("！！文件读取失败：(%d)\r\n", f_res);
-    //     }
-    // }
-    // else
-    // {
-    //     printf("！！打开文件失败。\r\n");
-    // }
-    // /* 不再读写，关闭文件 */
-    // f_close(&file);
+    printf("****** 即将进行文件读取测试... ******\r\n");
+    res = f_open(&file, tempfilepath, FA_OPEN_EXISTING | FA_READ);
+    if (res == FR_OK)
+    {
+        printf("》打开文件成功。\r\n");
+        res = f_read(&file, ReadBuffer, sizeof(ReadBuffer), &fnum);
+        if (res == FR_OK)
+        {
+            printf("》文件读取成功,读到字节数据：%d\r\n", fnum);
+            printf("》读取得的文件数据为：\r\n%s \r\n", ReadBuffer);
+        }
+        else
+        {
+            printf("！！文件读取失败：(%d)\r\n", res);
+        }
+    }
+    else
+    {
+        printf("！！打开文件失败。\r\n");
+    }
+    /* 不再读写，关闭文件 */
+    f_close(&file);
 
     /* USER CODE END 2 */
 

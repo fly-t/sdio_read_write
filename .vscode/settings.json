@@ -3,7 +3,10 @@
         "*.qmd": "markdown",
         "*.md": "markdown",
         "sdio.h": "c",
-        "string.h": "c"
+        "string.h": "c",
+        "fatfs.h": "c",
+        "rtc.h": "c",
+        "tim.h": "c"
     },
     "cortex-debug.variableUseNaturalFormat": true
 }

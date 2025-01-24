@@ -154,4 +154,45 @@ const Diskio_drvTypeDef  SD_Driver =
 
 ## 读写
 
-1. 挂载
+要是没有生成sdio_init 函数注意手动初始化.否则会失败,指南者的dma需要手动操作,无法cubemx因为只有一个dma.
+
+挂载失败多数是因为没有文件系统, 创建一个文件系统就好了.
+
+``` c
+MX_SDIO_SD_Init_Fix();
+
+FRESULT res = f_mount(&SDFatFS, (TCHAR const *)SDPath, 1);
+
+```
+
+增加文件操操作时间
+
+`fatfs.c`
+
+``` c
+DWORD get_fattime(void)
+{
+    /* USER CODE BEGIN get_fattime */
+    RTC_DateTypeDef GetData; // 获取日期结构体
+
+    RTC_TimeTypeDef GetTime; // 获取时间结构体
+    /* Get the RTC current Time */
+    HAL_RTC_GetTime(&hrtc, &GetTime, RTC_FORMAT_BIN);
+    /* Get the RTC current Date */
+    HAL_RTC_GetDate(&hrtc, &GetData, RTC_FORMAT_BIN);
+
+    /* Display date Format : yy/mm/dd */
+    // printf("%02d/%02d/%02d\r\n", 2000 + GetData.Year, GetData.Month, GetData.Date);
+    /* Display time Format : hh:mm:ss */
+    // printf("%02d:%02d:%02d\r\n", GetTime.Hours, GetTime.Minutes, GetTime.Seconds);
+
+    return ((DWORD)((GetData.Year+2000)-1980) << 25) /* Year     */
+           | ((DWORD)GetData.Month << 21)       /* Month     */
+           | ((DWORD)GetData.Date << 16)        /* Day_m  */
+           | ((DWORD)GetTime.Hours << 11)       /* Hour        */
+           | ((DWORD)GetTime.Minutes << 5)      /* Min      */
+           | ((DWORD)GetTime.Seconds >> 1);     /* Sec        */
+    return 0;
+    /* USER CODE END get_fattime */
+}
+```
