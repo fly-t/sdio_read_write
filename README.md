@@ -1,10 +1,15 @@
+# branch
+
+1. sd_raw(sd卡原始读写)
+2. sd_fatfs(文件系统)
+
 # Board
 
 野火指南者: STM32F103VET6
 
 ![野火指南者](https://doc.embedfire.com/mcu/stm32/f103zhinanzhe/std/zh/latest/_static/images/f103zhinanzhe.png)
 
-# 使用SDIO读写SD卡
+# 使用SDIO配合fatfs读写SD卡
 
 ## 原理图
 
@@ -25,11 +30,15 @@
 1. 这时钟分频器, 默认配置时钟是36Mhz
 2. 4bits模式
 3. 栈大小调大(SDIO使用了512个byte我给了0x1000(4K))
+4. 配置fatfs语言为USA, simplechines 的cc936太占用空间了
+5. 是否开启长文件名
 
 ![](https://raw.githubusercontent.com/fly-t/images/main/blog/README-2025-01-21-17-06-54.png)
 
 ![](https://raw.githubusercontent.com/fly-t/images/main/blog/README-2025-01-21-17-20-17.png)
 
+
+![](https://raw.githubusercontent.com/fly-t/images/main/blog/README-2025-01-23-15-31-55.png)
 
 bypass 旁路时钟分频器, 最大时钟36Mhz直接作为sdio的时钟
 
@@ -118,3 +127,31 @@ void MX_SDIO_SD_Init_Fix(void)
 ## F103只有一个dma
 
 所以读写需要修改dma的方向. 外设到内存(读) 内存到外设(写)
+
+
+## FatFs 修改
+
+1. 可根据读写修改只读或者只写..
+
+
+`sd_diskio.c`
+
+``` c
+const Diskio_drvTypeDef  SD_Driver =
+{
+  SD_initialize,
+  SD_status,
+  SD_read, 
+#if  _USE_WRITE == 1    // <-------------修改为0表示关闭写
+  SD_write,
+#endif /* _USE_WRITE == 1 */
+  
+#if  _USE_IOCTL == 1    // <-------------修改为0表示关闭io控制
+  SD_ioctl,
+#endif /* _USE_IOCTL == 1 */
+};
+```
+
+## 读写
+
+1. 挂载

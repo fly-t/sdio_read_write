@@ -19,8 +19,8 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "dma.h"
+#include "fatfs.h"
 #include "rtc.h"
-#include "stm32f1xx_hal.h"
 #include "tim.h"
 #include "usart.h"
 #include "gpio.h"
@@ -54,14 +54,14 @@
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
-
+void rtc_demo(void);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 #include <stdio.h>
 
-// é‡å†™fputc
+// ÖØĞ´fputc
 #ifdef __GNUC__
 #define PUTCHAR_PROTOTYPE int __io_putchar(int ch)
 #else
@@ -108,8 +108,116 @@ int main(void)
     MX_TIM7_Init();
     MX_USART1_UART_Init();
     MX_RTC_Init();
+    MX_FATFS_Init();
     /* USER CODE BEGIN 2 */
-    sdio_demo();
+    // sdio_demo();
+    MX_SDIO_SD_Init_Fix();
+
+    FRESULT res = f_mount(&SDFatFS, (TCHAR const *)SDPath, 1);
+
+    switch (res)
+    {
+    case FR_NO_FILESYSTEM:
+        /*
+            sfd£ºÖ¸¶¨·ÖÇøÀàĞÍ£º
+                0: FDISK¸ñÊ½£¨´øÓĞÖ÷·ÖÇø±í£©¡£ÊÊÓÃÓÚĞèÒª¶à·ÖÇøµÄÉè±¸¡£
+                1: SFD¸ñÊ½£¨Õû¸öÉè±¸µ¥Ò»·ÖÇø£©¡£³£ÓÃÓÚ SD ¿¨¡¢U ÅÌµÈÉè±¸¡£
+
+            au£º
+                Ö¸¶¨´ØµÄ´óĞ¡£¨Allocation Unit Size£©£¬Í¨³£Îª 512¡¢1024¡¢2048 µÈµÄ±¶Êı¡£
+                Èç¹ûÖ¸¶¨Îª 0£¬FATFS »á¸ù¾İÉè±¸µÄ´óĞ¡×Ô¶¯Ñ¡Ôñ×îºÏÊÊµÄ´Ø´óĞ¡¡£
+        */
+
+        res = f_mkfs(SDPath, 0, 0);
+        printf("fatfs mkfs\r\n");
+        if (res == FR_OK)
+        {
+            printf("¡·SD¿¨ÒÑ³É¹¦¸ñÊ½»¯ÎÄ¼şÏµÍ³¡£\r\n");
+            /* ¸ñÊ½»¯ºó£¬ÏÈÈ¡Ïû¹ÒÔØ */
+            res = f_mount(NULL, (TCHAR const *)SDPath, 1);
+            /* ÖØĞÂ¹ÒÔØ	*/
+            res = f_mount(&SDFatFS, (TCHAR const *)SDPath, 1);
+        }
+        else
+        {
+            printf("¡¶¡¶¸ñÊ½»¯Ê§°Ü¡£¡·¡·\r\n");
+            while (1)
+                ;
+        }
+        printf("create fat32 ok mount ok \r\n");
+
+        break;
+
+    default:
+        break;
+    }
+
+    if (res != FR_OK)
+    {
+        printf("fatfs mount failed\r\n");
+    }
+    else
+    {
+        printf("SDPath:%s\n", SDPath);
+    }
+
+    /*----------------------- ÎÄ¼şÏµÍ³²âÊÔ£ºĞ´²âÊÔ -----------------------------*/
+    /* ´ò¿ªÎÄ¼ş£¬Èç¹ûÎÄ¼ş²»´æÔÚÔò´´½¨Ëü */
+    printf("****** ¼´½«½øĞĞÎÄ¼şĞ´Èë²âÊÔ... ******\r\n");
+    FIL file;  /* ÎÄ¼ş¶ÔÏó */
+    UINT fnum; /* ÎÄ¼ş³É¹¦¶ÁĞ´ÊıÁ¿ */
+    BYTE WriteBuffer[] = "»¶Ó­Ê¹ÓÃÒ°»ğSTM32¿ª·¢°å ½ñÌìÊÇ¸öºÃÈÕ×Ó£¬ĞÂ½¨ÎÄ¼şÏµÍ³²âÊÔÎÄ¼ş\r\n";
+
+    char tempfilepath[60];
+    sprintf(tempfilepath, "%s%s", SDPath, "FatFs¶ÁĞ´²âÊÔÎÄ¼ş.txt"); // Æ´½Ó³ö´øÂß¼­Çı¶¯Æ÷ÃûµÄÍêÕûÂ·¾¶Ãû
+
+    res = f_open(&file, tempfilepath, FA_CREATE_ALWAYS | FA_WRITE);
+    if (res == FR_OK)
+    {
+        printf("¡·´ò¿ª/´´½¨FatFs¶ÁĞ´²âÊÔÎÄ¼ş.txtÎÄ¼ş³É¹¦£¬ÏòÎÄ¼şĞ´ÈëÊı¾İ¡£\r\n");
+        /* ½«Ö¸¶¨´æ´¢ÇøÄÚÈİĞ´Èëµ½ÎÄ¼şÄÚ */
+        res = f_write(&file, WriteBuffer, sizeof(WriteBuffer), &fnum);
+        if (res == FR_OK)
+        {
+            printf("¡·ÎÄ¼şĞ´Èë³É¹¦£¬Ğ´Èë×Ö½ÚÊı¾İ£º%d\r\n", fnum);
+            printf("¡·ÏòÎÄ¼şĞ´ÈëµÄÊı¾İÎª£º\r\n%s\r\n", WriteBuffer);
+        }
+        else
+        {
+            printf("£¡£¡ÎÄ¼şĞ´ÈëÊ§°Ü£º(%d)\r\n", res);
+        }
+        /* ²»ÔÙ¶ÁĞ´£¬¹Ø±ÕÎÄ¼ş */
+        f_close(&file);
+    }
+    else
+    {
+        printf("£¡£¡´ò¿ª/´´½¨ÎÄ¼şÊ§°Ü¡£\r\n");
+    }
+
+    /*------------------- ÎÄ¼şÏµÍ³²âÊÔ£º¶Á²âÊÔ ------------------------------------*/
+    // printf("****** ¼´½«½øĞĞÎÄ¼ş¶ÁÈ¡²âÊÔ... ******\r\n");
+    // f_res = f_open(&file, tempfilepath, FA_OPEN_EXISTING | FA_READ);
+    // if (f_res == FR_OK)
+    // {
+    //     printf("¡·´ò¿ªÎÄ¼ş³É¹¦¡£\r\n");
+    //     f_res = f_read(&file, ReadBuffer, sizeof(ReadBuffer), &fnum);
+    //     if (f_res == FR_OK)
+    //     {
+    //         printf("¡·ÎÄ¼ş¶ÁÈ¡³É¹¦,¶Áµ½×Ö½ÚÊı¾İ£º%d\r\n", fnum);
+    //         printf("¡·¶ÁÈ¡µÃµÄÎÄ¼şÊı¾İÎª£º\r\n%s \r\n", ReadBuffer);
+    //         LED_GREEN;
+    //     }
+    //     else
+    //     {
+    //         printf("£¡£¡ÎÄ¼ş¶ÁÈ¡Ê§°Ü£º(%d)\r\n", f_res);
+    //     }
+    // }
+    // else
+    // {
+    //     printf("£¡£¡´ò¿ªÎÄ¼şÊ§°Ü¡£\r\n");
+    // }
+    // /* ²»ÔÙ¶ÁĞ´£¬¹Ø±ÕÎÄ¼ş */
+    // f_close(&file);
 
     /* USER CODE END 2 */
 
@@ -117,19 +225,8 @@ int main(void)
     /* USER CODE BEGIN WHILE */
     while (1)
     {
-        RTC_DateTypeDef GetData; // è·å–æ—¥æœŸç»“æ„ä½“
+        // rtc_demo();
 
-        RTC_TimeTypeDef GetTime; // è·å–æ—¶é—´ç»“æ„ä½“
-        /* Get the RTC current Time */
-        HAL_RTC_GetTime(&hrtc, &GetTime, RTC_FORMAT_BIN);
-        /* Get the RTC current Date */
-        HAL_RTC_GetDate(&hrtc, &GetData, RTC_FORMAT_BIN);
-
-        /* Display date Format : yy/mm/dd */
-        printf("%02d/%02d/%02d\r\n", 2000 + GetData.Year, GetData.Month, GetData.Date);
-        /* Display time Format : hh:mm:ss */
-        printf("%02d:%02d:%02d\r\n", GetTime.Hours, GetTime.Minutes, GetTime.Seconds);
-        HAL_Delay(1000);
         /* USER CODE END WHILE */
 
         /* USER CODE BEGIN 3 */
@@ -184,7 +281,22 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
+void rtc_demo(void)
+{
+    RTC_DateTypeDef GetData; // »ñÈ¡ÈÕÆÚ½á¹¹Ìå
 
+    RTC_TimeTypeDef GetTime; // »ñÈ¡Ê±¼ä½á¹¹Ìå
+    /* Get the RTC current Time */
+    HAL_RTC_GetTime(&hrtc, &GetTime, RTC_FORMAT_BIN);
+    /* Get the RTC current Date */
+    HAL_RTC_GetDate(&hrtc, &GetData, RTC_FORMAT_BIN);
+
+    /* Display date Format : yy/mm/dd */
+    printf("%02d/%02d/%02d\r\n", 2000 + GetData.Year, GetData.Month, GetData.Date);
+    /* Display time Format : hh:mm:ss */
+    printf("%02d:%02d:%02d\r\n", GetTime.Hours, GetTime.Minutes, GetTime.Seconds);
+    HAL_Delay(1000);
+}
 /* USER CODE END 4 */
 
 /**

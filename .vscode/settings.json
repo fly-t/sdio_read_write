@@ -2,7 +2,8 @@
     "files.associations": {
         "*.qmd": "markdown",
         "*.md": "markdown",
-        "sdio.h": "c"
+        "sdio.h": "c",
+        "string.h": "c"
     },
     "cortex-debug.variableUseNaturalFormat": true
 }
