@@ -226,7 +226,7 @@ int main(void)
     /* USER CODE BEGIN WHILE */
     while (1)
     {
-        // rtc_demo();
+        rtc_demo();
 
         /* USER CODE END WHILE */
 
